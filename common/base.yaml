@@ -13,4 +13,4 @@ spec:
   sourceRef:
     kind: GitRepository
     namespace: tanzu-continuousdelivery-resources
-    name: wavefront-install
+    name: wavefront
