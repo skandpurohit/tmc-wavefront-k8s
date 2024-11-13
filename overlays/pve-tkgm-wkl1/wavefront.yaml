@@ -4,11 +4,7 @@ metadata:
  name: wavefront
  namespace: observability-system
 spec:
- clusterName: cluster_name
- valueFrom:
-   configMapKeyRef:
-     name: pve-configmap
-     key: cluster_name
+ clusterName: pve-tkgm-wk1
  wavefrontUrl: https://internal.wavefront.com
  dataExport:
   wavefrontProxy:
