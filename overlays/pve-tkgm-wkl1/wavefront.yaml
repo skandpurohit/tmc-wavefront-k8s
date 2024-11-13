@@ -8,7 +8,7 @@ spec:
  valueFrom:
    configMapKeyRef:
      name: pve-configmap
-     key: CLUSTER_NAME
+     key: cluster_name
  wavefrontUrl: https://internal.wavefront.com
  dataExport:
   wavefrontProxy:
