@@ -1,11 +1,19 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-  - ../../base/
-  - wavefront.yaml
+# apiVersion: kustomize.config.k8s.io/v1beta1
+# kind: Kustomization
+# resources:
+#   - ../../base/
+#   - wavefront.yaml
 
-configMapGenerator:
-  - name: pve-configmap
-    namespace: observability-system
-    literals:
-      - cluster_name="pve-tkgm-wk1"
+# configMapGenerator:
+#   - name: cluster-config
+#     literals:
+#       - CLUSTER_NAME=pve-tkgm-wk1  
+
+# vars:
+#   - name: CLUSTER_NAME
+#     objref:
+#       kind: ConfigMap
+#       name: cluster-config
+#       apiVersion: v1
+#     fieldref:
+#       fieldpath: data.CLUSTER_NAME

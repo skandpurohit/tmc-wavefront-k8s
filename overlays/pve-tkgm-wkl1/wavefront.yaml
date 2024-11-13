@@ -1,14 +1,14 @@
-apiVersion: wavefront.com/v1alpha1
-kind: Wavefront
-metadata:
- name: wavefront
- namespace: observability-system
-spec:
- clusterName: pve-tkgm-wk1
- wavefrontUrl: https://internal.wavefront.com
- dataExport:
-  wavefrontProxy:
-   enable: true
- dataCollection:
-  metrics:
-   enable: true
+# apiVersion: wavefront.com/v1alpha1
+# kind: Wavefront
+# metadata:
+#  name: wavefront
+#  namespace: observability-system
+# spec:
+#  clusterName: ${CLUSTER_NAME}
+#  wavefrontUrl: https://internal.wavefront.com
+#  dataExport:
+#   wavefrontProxy:
+#    enable: true
+#  dataCollection:
+#   metrics:
+#    enable: true
