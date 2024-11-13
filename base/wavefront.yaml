@@ -1,0 +1,18 @@
+apiVersion: wavefront.com/v1alpha1
+kind: Wavefront
+metadata:
+ name: wavefront
+ namespace: observability-system
+spec:
+ clusterName: cluster_name
+ valueFrom:
+   configMapKeyRef:
+     name: pve-configmap
+     key: CLUSTER_NAME
+ wavefrontUrl: https://internal.wavefront.com
+ dataExport:
+  wavefrontProxy:
+   enable: true
+ dataCollection:
+  metrics:
+   enable: true
